@@ -1,0 +1,23 @@
+{
+  "name": "plebz",
+  "version": "1.0.0",
+  "description": "Plebz Source Code",
+  "main": "./public/index.html",
+  "private": true,
+  "scripts": {
+    "dev": "yarn tailwindcss -i ./public/styles/input.css -o ./public/styles/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IHarisImran/plebz"
+  },
+  "author": "Plebz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IHarisImran/plebz/issues"
+  },
+  "homepage": "https://github.com/IHarisImran/plebz/#readme",
+  "dependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}

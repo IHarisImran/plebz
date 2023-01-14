@@ -1,0 +1,16 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./public/**/*.{html,js}"],
+  theme: {
+    extend: {
+      colors: {
+        tPurple: '#2C1944',
+        tPurpleLight: '#C984FF',
+        tPurpleLightV2: '#DDC2FF',
+        tYellow: '#D5FD63',
+        tLink: '#958CA1'
+      },
+    },
+  },
+  plugins: [],
+}
