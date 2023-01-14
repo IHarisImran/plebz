@@ -642,6 +642,10 @@ video {
   width: 5rem;
 }
 
+.w-24{
+  width: 6rem;
+}
+
 .max-w-7xl{
   max-width: 80rem;
 }
@@ -888,6 +892,11 @@ video {
   line-height: 2.25rem;
 }
 
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-extralight{
   font-weight: 200;
 }
@@ -1094,6 +1103,11 @@ body {
   .sm\:text-base{
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .sm\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
