@@ -2,6 +2,7 @@
 
 * **Website:** https://www.plebz.me/
 * **GitHub Repository:** https://github.com/IHarisImran/plebz
+* **Preview** https://iharisimran.github.io/plebz/public/
 
 ## Information
 
