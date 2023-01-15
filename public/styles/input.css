@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* Global */
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: #FEFEF4;
+}
+
+br {
+    content: "A" !important;
+    display: block !important;
+    margin-bottom: 15px !important;
+}
+
+select:focus,
+textarea,
+textarea:focus,
+input:focus {
+    @apply outline-none;
+}
+
+@media screen and (min-width: 768px) {
+    br {
+        content: "A" !important;
+        display: block !important;
+        margin-bottom: 25px !important;
+    }
+}
+
+
+
+/* Home */
+
+@media screen and (min-width: 768px) {
+    .homeBox2 {
+        border-radius: 16px 100px 16px 16px;
+    }
+
+    .homeBox3 {
+        border-radius: 16px 16px 16px 100px;
+    }
+
+    br {
+        content: "A" !important;
+        display: block !important;
+        margin-bottom: 25px !important;
+    }
+}
+
+
+
+/* Who We Are */
+
+@media screen and (min-width: 640px) {
+    .guy1 {
+        border-radius: 125px 8px 8px 8px;
+    }
+
+    .guy2 {
+        border-radius: 8px 8px 125px 8px;
+    }
+}
+
+/* 
+sm: 640
+md: 768
+lg: 1024
+xl: 1280
+2xl: 1534
+*/
