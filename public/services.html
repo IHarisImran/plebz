@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./styles/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="icon" href='./images/branded/favicon.webp' />
     <meta name="description" content='' />
@@ -143,128 +144,82 @@
                     <div class="w-64 sm:w-full md:w-52 lg:w-60 mx-auto">
                         <h2 class="text-2xl lg:text-3xl">Básico</h2>
 
-                        <div class="flex items-center gap-1 justify-center my-10 md:my-12">
+                        <div class="flex items-center gap-1 justify-center my-6 sm:my-6 lg:my-12">
                             <div class="text-lg md:text-xl font-medium text-slate-400">R$</div>
                             <div class="text-4xl md:text-5xl lg:text-6xl font-medium">0</div>
                         </div>
 
-                        <div>Perfeito para iniciantes, sem custo fixo.</div>
+                        <div class="sm:px-2 h-20">Perfeito para iniciantes, sem custo fixo.</div>
 
-                        <hr class="my-14 border-purple-200">
+                        <hr class="mt-5 mb-16 border-purple-200">
 
-                        <ul class="list-disc text-start space-y-4 ml-4 lg:ml-5 mb-14">
+                        <ul class="list-disc text-start space-y-4 ml-4 lg:ml-5 h-48">
                             <li>Sem custo mensal</li>
                             <li>Pague por transação assinada pela Plebz</li>
                             <li>Multisig 2-de-3</li>
                         </ul>
 
-                        <button
-                            class="transition-all bg-tPurpleLightV2 hover:bg-tPurpleLight w-full px-8 py-3 rounded-full font-semibold">
-                            <a href="#">Selecionar</a>
+                        <button class="w-full flex items-center justify-center">
+                            <a href="#"
+                                class="transition-all bg-tPurpleLightV2 hover:bg-tPurpleLight w-full sm:w-10/12 md:w-full px-8 py-3 rounded-full font-semibold">Selecionar</a>
                         </button>
                     </div>
                 </div>
 
-                <div
-                    class="w-full sm:w-6/12 md:w-4/12 border-y sm:border-y-0 sm:border-x border-tPurpleLightV2 py-6 my-6 sm:py-0 sm:my-0">
-                    <div>
-                        <h2 class="text-xl md:text-2xl lg:text-3xl">Avançado</h2>
+                <div class="w-full sm:w-6/12 md:w-4/12 border-y sm:border-y-0 sm:border-x my-16 py-16 sm:my-0 sm:py-0">
+                    <div class="w-64 sm:w-full md:w-52 lg:w-60 mx-auto">
+                        <h2 class="text-2xl lg:text-3xl">Básico</h2>
+
+                        <div class="flex items-center gap-1 justify-center  my-6 sm:my-6 lg:my-12">
+                            <div class="text-lg md:text-xl font-medium text-slate-400">R$</div>
+                            <div class="text-4xl md:text-5xl lg:text-6xl font-medium">400</div>
+                        </div>
+
+                        <div class="sm:px-2 h-20">Para quem quer suporte 24 horas por dia</div>
+
+                        <hr class="mt-5 mb-16 border-purple-200">
+
+                        <ul class="list-disc text-start space-y-4 ml-4 lg:ml-5 h-48">
+                            <li>Sem custo mensal</li>
+                            <li>Pague por transação assinada pela Plebz</li>
+                            <li>Multisig 2-de-3</li>
+                        </ul>
+
+                        <button class="w-full flex items-center justify-center">
+                            <a href="#"
+                                class="transition-all bg-tPurpleLightV2 hover:bg-tPurpleLight w-full sm:w-10/12 md:w-full px-8 py-3 rounded-full font-semibold">Selecionar</a>
+                        </button>
                     </div>
                 </div>
 
                 <div class="w-full sm:w-6/12 md:w-4/12">
-                    <div>
-                        <h2 class="text-xl md:text-2xl lg:text-3xl">VIP</h2>
+                    <div class="w-64 sm:w-full md:w-52 lg:w-60 mx-auto">
+                        <h2 class="text-2xl lg:text-3xl">Básico</h2>
+
+                        <div class="flex items-center gap-1 justify-center my-6 sm:my-6 lg:my-12">
+                            <div class="text-lg md:text-xl font-medium text-slate-400">R$</div>
+                            <div class="text-4xl md:text-5xl lg:text-6xl font-medium">2.000</div>
+                        </div>
+
+                        <div class="sm:px-2 h-20">Private Banking em Bitcoin</div>
+
+                        <hr class="mt-5 mb-16 border-purple-200">
+
+                        <ul class="list-disc text-start space-y-4 ml-4 lg:ml-5 h-48">
+                            <li>Sem custo mensal</li>
+                            <li>Pague por transação assinada pela Plebz</li>
+                            <li>Multisig 2-de-3</li>
+                        </ul>
+
+                        <button class="w-full flex items-center justify-center">
+                            <a href="#"
+                                class="transition-all bg-tPurpleLightV2 hover:bg-tPurpleLight w-full sm:w-10/12 md:w-full px-8 py-3 rounded-full font-semibold">Selecionar</a>
+                        </button>
                     </div>
                 </div>
 
             </div>
         </section>
-        <script>
-            let pricings = [
-                {
-                    name: 'Básico',
-                    price: '0',
-                    desc: 'Perfeito para iniciantes, sem custo fixo.',
-                    points: ['Sem custo mensal', 'Pague por transação assinada pela Plebz', 'Multisig 2-de-3']
-                },
-                {
-                    name: 'Avançado',
-                    price: '400',
-                    desc: 'Para quem quer suporte 24 horas por dia',
-                    points: ['Canais de suporte 24hs, 7 dias por semana', 'Concierge Onboarding', 'Multisig 2-de-3']
-                },
-                {
-                    name: 'VIP',
-                    price: '2.000',
-                    desc: 'Private Banking em Bitcoin',
-                    points: ['Planejamento sucessório', 'Atendimento exclusivo e individualizado', 'Multisig 3-de-5']
-                }
-            ]
-
-            for (let i = 0; i < pricings.length; i++) {
-                console.log(pricings[i].name)
-                console.log(pricings[i].price)
-                console.log(pricings[i].desc)
-                console.log(pricings[i].points)
-            }
-        </script>
-
-
-        <!-- <section>
-            <h2 class="text-2xl sm:text-3xl font-medium mb-10 sm:mb-20 text-center">Nossos Planos
-            </h2>
-
-            <div class="flex flex-col sm:flex-row items-center gap-10 md:gap-6 lg:gap-10 bg-white shadow-2xl shadow-tPurpleLightV2 p-10 sm:p-12 md:p-14 rounded-3xl text-center"
-                style="--tw-shadow-color: #ddc2ff54;">
-                <div
-                    class="w-56 sm:w-60 md:w-4/12 lg:w-3/12 lg:px-6 xl:px-10 flex flex-col justify-center text-sm sm:text-base">
-                    <h3 class="text-2xl sm:text-3xl">Básico</h3>
-                    <div class="flex items-center justify-center gap-1 my-8 sm:my-10 md:my-12">
-                        <div class="text-lg sm:text-xl text-slate-400">R$</div>
-                        <div class="text-4xl sm:text-5xl md::text-6xl font-bold">0</div>
-                    </div>
-                    <p>Perfeito para iniciantes, sem custo fixo.</p>
-                    <hr class="my-10 md:my-14 border-purple-200">
-                    <ul class="flex flex-col gap-3 md:gap-4 text-start list-disc">
-                        <li>Sem custo mensal</li>
-                        <li>Pague por transação assinada pela Plebz</li>
-                        <li>Multisig 2-de-3</li>
-                    </ul>
-                </div>
-                <div
-                    class="w-56 sm:w-60 md:w-4/12 lg:w-3/12 lg:px-6 xl:px-10 flex flex-col justify-center text-sm sm:text-base border-tPurpleLightV2 border-y sm:border-x py-10 my-10 sm:py-0 sm:my-0 sm:px-10 sm:mx-10">
-                    <h3 class="text-2xl sm:text-3xl">Básico</h3>
-                    <div class="flex items-center justify-center gap-1 my-8 sm:my-10 md:my-12">
-                        <div class="text-lg sm:text-xl text-slate-400">R$</div>
-                        <div class="text-4xl sm:text-5xl md::text-6xl font-bold">0</div>
-                    </div>
-                    <p>Perfeito para iniciantes, sem custo fixo.</p>
-                    <hr class="my-10 md:my-14 border-purple-200">
-                    <ul class="flex flex-col gap-3 md:gap-4 text-start list-disc">
-                        <li>Sem custo mensal</li>
-                        <li>Pague por transação assinada pela Plebz</li>
-                        <li>Multisig 2-de-3</li>
-                    </ul>
-                </div>
-                <div
-                    class="w-56 sm:w-60 md:w-4/12 lg:w-3/12 lg:px-6 xl:px-10 flex flex-col justify-center text-sm sm:text-base">
-                    <h3 class="text-2xl sm:text-3xl">Básico</h3>
-                    <div class="flex items-center justify-center gap-1 my-8 sm:my-10 md:my-12">
-                        <div class="text-lg sm:text-xl text-slate-400">R$</div>
-                        <div class="text-4xl sm:text-5xl md::text-6xl font-bold">0</div>
-                    </div>
-                    <p>Perfeito para iniciantes, sem custo fixo.</p>
-                    <hr class="my-10 md:my-14 border-purple-200">
-                    <ul class="flex flex-col gap-3 md:gap-4 text-start list-disc">
-                        <li>Sem custo mensal</li>
-                        <li>Pague por transação assinada pela Plebz</li>
-                        <li>Multisig 2-de-3</li>
-                    </ul>
-                </div>
-            </div>
-
-        </section> -->
 
     </div>
 
