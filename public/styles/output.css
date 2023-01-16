@@ -766,6 +766,10 @@ video {
   align-items: center;
 }
 
+.justify-start{
+  justify-content: flex-start;
+}
+
 .justify-end{
   justify-content: flex-end;
 }
@@ -1431,6 +1435,10 @@ xl: 1280
 
   .sm\:items-start{
     align-items: flex-start;
+  }
+
+  .sm\:items-center{
+    align-items: center;
   }
 
   .sm\:justify-end{
