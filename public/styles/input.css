@@ -36,6 +36,51 @@ input:focus {
 
 
 
+/* Single Post Page */
+
+.blogPost br {
+    content: "A" !important;
+    display: block !important;
+    margin-bottom: 25px !important;
+}
+
+.blogPost {
+    font-weight: 500;
+}
+
+.blogPost ul,
+.blogPost ol {
+    margin: 25px 0px 25px 32px;
+}
+
+.blogPost ul {
+    list-style-type: disc;
+}
+
+.blogPost ol {
+    list-style-type: armenian;
+}
+
+.blogPost h2,
+.blogPost h3,
+.blogPost h4,
+.blogPost h5,
+.blogPost h6 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.blogPost img {
+    margin: 40px 0px 40px 0px;
+}
+
+.blogPost p {
+    margin: 25px 0px 25px 0px;
+}
+
+
 /* Home */
 
 @media screen and (min-width: 768px) {

@@ -10,7 +10,14 @@ module.exports = {
         tYellow: '#D5FD63',
         tLink: '#958CA1'
       },
+      screens: {
+        '2xl': '1280px',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/line-clamp'),
+  ],
 }
+
+// 1536 = 1280

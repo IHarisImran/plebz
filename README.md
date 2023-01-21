@@ -6,7 +6,7 @@
 
 ## Information
 
-This repository contains Plebz complete source code. To work on this website, use the following commands:
+This repository contains Plebz complete source code. To development-work on this website, use the following commands:
 
 ### Install yarn globally
 
@@ -19,8 +19,3 @@ This repository contains Plebz complete source code. To work on this website, us
 ### Start the development server
 
 * yarn dev
-
-## Technologies Used
-
-* Vanilla JS
-* Tailwind CSS
