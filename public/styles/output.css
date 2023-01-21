@@ -1591,6 +1591,10 @@ xl: 1280
     padding-left: 3rem;
   }
 
+  .sm\:pt-20{
+    padding-top: 5rem;
+  }
+
   .sm\:text-start{
     text-align: start;
   }
