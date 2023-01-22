@@ -4,8 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 /* Global */
 
 body {
@@ -117,11 +115,3 @@ input:focus {
         border-radius: 8px 8px 125px 8px;
     }
 }
-
-/* 
-sm: 640
-md: 768
-lg: 1024
-xl: 1280
-2xl: 1534
-*/
