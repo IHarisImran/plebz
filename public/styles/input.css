@@ -26,6 +26,11 @@ input:focus {
     @apply outline-none;
 }
 
+::selection {
+    color: rgb(44, 25, 68);
+    background: rgb(221, 194, 255);
+  }
+
 @media screen and (min-width: 768px) {
     br {
         content: "A" !important;

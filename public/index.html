@@ -180,7 +180,8 @@
         <h2 class="text-2xl md:text-3xl text-center mb-10 sm:mb-14 md:mb-20">Diferenciais</h2>
         <div class="grid grid-cols-12 gap-6">
 
-            <div class="col-span-full md:col-span-7 bg-tPurpleLightV2 rounded-2xl flex items-center p-5">
+            <div
+                class="transition-all hover:scale-105 col-span-full md:col-span-7 bg-tPurpleLightV2 rounded-2xl flex items-center p-5">
 
                 <div class="w-8/12 sm:w-6/12 text-xs sm:text-sm lg:text-base">
                     <h4 class="text-xl sm:text-2xl font-bold">Multisig</h4>
@@ -202,20 +203,23 @@
 
             </div>
 
-            <div class="homeBox2 col-span-full md:col-span-5 bg-slate-200 p-5 lg:p-8 rounded-2xl">
+            <div
+                class="transition-all hover:scale-105 homeBox2 col-span-full md:col-span-5 bg-slate-200 p-5 lg:p-8 rounded-2xl">
                 <h4 class="text-xl sm:text-2xl font-bold">Concierge</h4>
                 <p class="my-4 font-semibold lg:text-lg">Para deixar seu patrimônio ainda mais seguro, enviamos as
                     hardware wallets que você precisar para seu endereço,e ajudamos a configurá-las.</p>
             </div>
 
-            <div class="homeBox3 col-span-full md:col-span-5 bg-tPurple text-white p-5 lg:p-8 rounded-2xl">
+            <div
+                class="transition-all hover:scale-105 homeBox3 col-span-full md:col-span-5 bg-tPurple text-white p-5 lg:p-8 rounded-2xl">
                 <h4 class="text-xl sm:text-2xl font-medium">Compra descomplicada</h4>
                 <p class="my-4 lg:text-lg">Deposite Reais via PIX e compre Bitcoin na Plebz em menos de1 minuto, sem
                     dor de cabeça
                     ou burocracia.</p>
             </div>
 
-            <div class="col-span-full md:col-span-7 bg-tYellow rounded-2xl flex items-center gap-10 p-5">
+            <div
+                class="transition-all hover:scale-105 col-span-full md:col-span-7 bg-tYellow rounded-2xl flex items-center gap-10 p-5">
 
                 <div class="w-8/12 sm:w-6/12 text-xs sm:text-sm lg:text-base">
                     <h4 class="text-xl sm:text-2xl font-bold">DCA</h4>
@@ -235,7 +239,6 @@
                 </div>
 
             </div>
-
     </section>
 
     <hr class="mx-20 md:mx-28 border-purple-200">
@@ -275,39 +278,95 @@
         <h2 class="text-2xl md:text-3xl font-medium text-center mb-10 sm:mb-14 md:mb-20">Principais dúvidas</h2>
         <div class="flex flex-col md:flex-row gap-6">
 
-            <img src="./images/inpage/home/inBody4.webp" alt="" class="w-3/12 hidden md:block rounded-xl"
-                style="border-radius: 90px 12px 12px 12px;">
+            <div class="w-3/12 hidden md:block rounded-xl">
+                <img src="./images/inpage/home/inBody4.webp" alt="" class="w-full h-auto"
+                    style="border-radius: 90px 12px 12px 12px;">
+            </div>
 
             <div class="w-full md:w-9/12 flex flex-col gap-4">
 
-                <div class="bg-white p-4 sm:p-6 shadow-lg shadow-gray-100 rounded-2xl">
-                    <div class="flex items-center justify-between mb-4 sm:mb-3">
+                <div class="FAQABody bg-white p-4 sm:p-6 shadow-lg shadow-gray-100 rounded-2xl">
+
+                    <div class="FAQAQues flex items-center justify-between mb-4 sm:mb-3 cursor-pointer"
+                        onclick="toggleFaqs('FAQA')">
                         <h3 class="font-medium text-base sm:text-lg">Como faço para comprar meu primeiro Bitcoin?</h3>
-                        <i class="bi-x-lg"></i>
+                        <i class="bi-x-lg hover:text-red-600"></i>
                     </div>
-                    <p class="text-sm font-semibold sm:mr-10">Lorem ipsum dolor sit amet, consectetur adipiscing
+
+                    <p class="FAQAAns text-sm font-semibold sm:mr-10">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing
                         elit, sed do
                         eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                         laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat
                         non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
+
                 </div>
 
-                <div class="flex items-center justify-between p-3 border rounded-lg text-gray-400">
-                    <h3 class="font-medium text-base sm:text-lg">O que é Multisig?</h3>
-                    <i class="bi-plus-lg text-xl sm:text-2xl"></i>
+                <div class="FAQBBody">
+
+                    <div class="FAQBQues flex items-center justify-between border rounded-lg text-gray-400 p-3 cursor-pointer"
+                        onclick="toggleFaqs('FAQB')">
+                        <h3 class="font-medium text-base sm:text-lg">Como faço para comprar meu primeiro Bitcoin?</h3>
+                        <i class="bi-x-lg hover:text-red-600"></i>
+                    </div>
+
+                    <p class="FAQBAns text-sm font-semibold sm:mr-10 hidden">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing
+                        elit, sed do
+                        eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+
                 </div>
 
-                <div class="flex items-center justify-between p-3 border rounded-lg text-gray-400">
-                    <h3 class="font-medium text-base sm:text-lg">O que é DCA?</h3>
-                    <i class="bi-plus-lg text-xl sm:text-2xl"></i>
+                <div class="FAQCBody">
+
+                    <div class="FAQCQues flex items-center justify-between border rounded-lg text-gray-400 p-3 cursor-pointer"
+                        onclick="toggleFaqs('FAQC')">
+                        <h3 class="font-medium text-base sm:text-lg">Como faço para comprar meu primeiro Bitcoin?</h3>
+                        <i class="bi-x-lg hover:text-red-600"></i>
+                    </div>
+
+                    <p class="FAQCAns text-sm font-semibold sm:mr-10 hidden">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing
+                        elit, sed do
+                        eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+
                 </div>
 
-                <div class="flex items-center justify-between p-3 border rounded-lg text-gray-400">
-                    <h3 class="font-medium text-base sm:text-lg">Como faço para comprar meu primeiro Bitcoin?</h3>
-                    <i class="bi-plus-lg text-xl sm:text-2xl"></i>
+                <div class="FAQDBody">
+
+                    <div class="FAQDQues flex items-center justify-between border rounded-lg text-gray-400 p-3 cursor-pointer"
+                        onclick="toggleFaqs('FAQD')">
+                        <h3 class="font-medium text-base sm:text-lg">Como faço para comprar meu primeiro Bitcoin?</h3>
+                        <i class="bi-x-lg hover:text-red-600"></i>
+                    </div>
+
+                    <p class="FAQDAns text-sm font-semibold sm:mr-10 hidden">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing
+                        elit, sed do
+                        eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+
                 </div>
 
                 <div class="flex items-center gap-4 text-xs sm:text-sm">
@@ -317,12 +376,27 @@
                         <i class="bi-arrow-right-short text-2xl text-tPurpleLight"></i>
                     </a>
                 </div>
-
             </div>
 
         </div>
 
     </section>
+    <script>
+        function toggleFaqs(e) {
+            const FAQBody = document.querySelector(`.${e}Body`),
+                FAQQues = document.querySelector(`.${e}Ques`),
+                FAQAns = document.querySelector(`.${e}Ans`)
+
+            if (FAQBody.classList.contains('bg-white')) {
+                FAQBody.classList = `${e}Body`;
+                FAQQues.classList = `${e}Ques flex items-center justify-between border rounded-lg text-gray-400 p-3 cursor-pointer`;
+            } else {
+                FAQBody.classList.add('bg-white', 'p-4', 'sm:p-6', 'shadow-lg', 'shadow-gray-100', 'rounded-2xl');
+                FAQQues.classList = `${e}Ques flex items-center justify-between mb-4 sm:mb-3 cursor-pointer`;
+            }
+            FAQAns.classList.toggle('hidden');
+        }
+    </script>
 
     <footer id="footer"></footer>
 
