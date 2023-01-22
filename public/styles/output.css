@@ -1117,6 +1117,10 @@ video {
   padding-top: 2rem;
 }
 
+.pb-7{
+  padding-bottom: 1.75rem;
+}
+
 .pb-5{
   padding-bottom: 1.25rem;
 }
@@ -1439,6 +1443,11 @@ xl: 1280
   color: rgb(220 38 38 / var(--tw-text-opacity));
 }
 
+.hover\:text-sky-800:hover{
+  --tw-text-opacity: 1;
+  color: rgb(7 89 133 / var(--tw-text-opacity));
+}
+
 @media (min-width: 640px){
   .sm\:col-span-6{
     grid-column: span 6 / span 6;
@@ -1740,6 +1749,10 @@ xl: 1280
     padding-top: 4rem;
   }
 
+  .sm\:pb-10{
+    padding-bottom: 2.5rem;
+  }
+
   .sm\:pl-12{
     padding-left: 3rem;
   }
@@ -1949,14 +1962,14 @@ xl: 1280
     padding-bottom: 0.75rem;
   }
 
-  .md\:py-20{
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-
   .md\:py-24{
     padding-top: 6rem;
     padding-bottom: 6rem;
+  }
+
+  .md\:py-20{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .md\:pt-20{
@@ -1981,14 +1994,14 @@ xl: 1280
     line-height: 1.75rem;
   }
 
-  .md\:text-3xl{
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
   .md\:text-6xl{
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .md\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .md\:text-lg{
