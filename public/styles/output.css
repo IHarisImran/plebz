@@ -994,6 +994,14 @@ video {
   background-position: bottom;
 }
 
+.bg-right{
+  background-position: right;
+}
+
+.bg-right-bottom{
+  background-position: right bottom;
+}
+
 .bg-no-repeat{
   background-repeat: no-repeat;
 }
@@ -1845,6 +1853,11 @@ xl: 1280
     margin-bottom: 1.5rem;
   }
 
+  .md\:my-20{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
   .md\:mt-8{
     margin-top: 2rem;
   }
@@ -2006,6 +2019,10 @@ xl: 1280
 
   .md\:pb-28{
     padding-bottom: 7rem;
+  }
+
+  .md\:pb-4{
+    padding-bottom: 1rem;
   }
 
   .md\:text-4xl{
