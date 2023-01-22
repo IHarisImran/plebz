@@ -543,10 +543,6 @@ video {
   grid-column: span 12 / span 12;
 }
 
-.m-20{
-  margin: 5rem;
-}
-
 .m-10{
   margin: 2.5rem;
 }
@@ -745,10 +741,6 @@ video {
 
 .max-w-5xl{
   max-width: 64rem;
-}
-
-.max-w-6xl{
-  max-width: 72rem;
 }
 
 .cursor-pointer{
@@ -984,18 +976,6 @@ video {
 
 .to-tPurpleLight{
   --tw-gradient-to: #C984FF;
-}
-
-.bg-cover{
-  background-size: cover;
-}
-
-.bg-bottom{
-  background-position: bottom;
-}
-
-.bg-right{
-  background-position: right;
 }
 
 .bg-right-bottom{
@@ -1488,11 +1468,6 @@ xl: 1280
     margin-bottom: 1.5rem;
   }
 
-  .sm\:my-16{
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-  }
-
   .sm\:my-4{
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -1610,10 +1585,6 @@ xl: 1280
     width: 10rem;
   }
 
-  .sm\:w-2\/12{
-    width: 16.666667%;
-  }
-
   .sm\:flex-row{
     flex-direction: row;
   }
@@ -1662,20 +1633,12 @@ xl: 1280
     gap: 2rem;
   }
 
-  .sm\:gap-3{
-    gap: 0.75rem;
-  }
-
-  .sm\:gap-10{
-    gap: 2.5rem;
+  .sm\:gap-4{
+    gap: 1rem;
   }
 
   .sm\:gap-20{
     gap: 5rem;
-  }
-
-  .sm\:gap-4{
-    gap: 1rem;
   }
 
   .sm\:border-y-0{
@@ -1706,10 +1669,6 @@ xl: 1280
 
   .sm\:p-10{
     padding: 2.5rem;
-  }
-
-  .sm\:p-4{
-    padding: 1rem;
   }
 
   .sm\:px-2{
@@ -1834,13 +1793,14 @@ xl: 1280
     grid-column: span 3 / span 3;
   }
 
-  .md\:m-28{
-    margin: 7rem;
-  }
-
   .md\:mx-28{
     margin-left: 7rem;
     margin-right: 7rem;
+  }
+
+  .md\:my-20{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
   }
 
   .md\:my-10{
@@ -1851,11 +1811,6 @@ xl: 1280
   .md\:my-6{
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-  }
-
-  .md\:my-20{
-    margin-top: 5rem;
-    margin-bottom: 5rem;
   }
 
   .md\:mt-8{
@@ -1966,12 +1921,12 @@ xl: 1280
     gap: 3.5rem;
   }
 
-  .md\:gap-24{
-    gap: 6rem;
-  }
-
   .md\:gap-10{
     gap: 2.5rem;
+  }
+
+  .md\:gap-24{
+    gap: 6rem;
   }
 
   .md\:p-5{
@@ -1984,14 +1939,6 @@ xl: 1280
 
   .md\:p-14{
     padding: 3.5rem;
-  }
-
-  .md\:p-7{
-    padding: 1.75rem;
-  }
-
-  .md\:p-0{
-    padding: 0px;
   }
 
   .md\:py-3{
@@ -2009,8 +1956,8 @@ xl: 1280
     padding-bottom: 5rem;
   }
 
-  .md\:pt-20{
-    padding-top: 5rem;
+  .md\:pb-4{
+    padding-bottom: 1rem;
   }
 
   .md\:pr-6{
@@ -2019,10 +1966,6 @@ xl: 1280
 
   .md\:pb-28{
     padding-bottom: 7rem;
-  }
-
-  .md\:pb-4{
-    padding-bottom: 1rem;
   }
 
   .md\:text-4xl{
@@ -2203,12 +2146,12 @@ xl: 1280
     gap: 12rem;
   }
 
-  .lg\:gap-36{
-    gap: 9rem;
-  }
-
   .lg\:gap-20{
     gap: 5rem;
+  }
+
+  .lg\:gap-36{
+    gap: 9rem;
   }
 
   .lg\:rounded-lg{

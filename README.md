@@ -6,7 +6,7 @@
 
 ## Information
 
-This repository contains Plebz complete source code. To development-work on this website, use the following commands:
+This repository contains Plebz complete source code. To start development-work on this website, use the following commands:
 
 ### Install yarn globally
 
