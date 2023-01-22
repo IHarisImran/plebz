@@ -1139,10 +1139,6 @@ video {
   text-align: start;
 }
 
-.font-serif{
-  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-}
-
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
