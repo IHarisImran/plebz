@@ -1602,6 +1602,10 @@ xl: 1280
     width: 10rem;
   }
 
+  .sm\:w-2\/12{
+    width: 16.666667%;
+  }
+
   .sm\:flex-row{
     flex-direction: row;
   }
@@ -1662,6 +1666,10 @@ xl: 1280
     gap: 5rem;
   }
 
+  .sm\:gap-4{
+    gap: 1rem;
+  }
+
   .sm\:border-y-0{
     border-top-width: 0px;
     border-bottom-width: 0px;
@@ -1690,6 +1698,10 @@ xl: 1280
 
   .sm\:p-10{
     padding: 2.5rem;
+  }
+
+  .sm\:p-4{
+    padding: 1rem;
   }
 
   .sm\:px-2{
@@ -1945,6 +1957,10 @@ xl: 1280
     gap: 6rem;
   }
 
+  .md\:gap-10{
+    gap: 2.5rem;
+  }
+
   .md\:p-5{
     padding: 1.25rem;
   }
@@ -1955,6 +1971,14 @@ xl: 1280
 
   .md\:p-14{
     padding: 3.5rem;
+  }
+
+  .md\:p-7{
+    padding: 1.75rem;
+  }
+
+  .md\:p-0{
+    padding: 0px;
   }
 
   .md\:py-3{
