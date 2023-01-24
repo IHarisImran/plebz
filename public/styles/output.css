@@ -527,16 +527,16 @@ video {
   position: sticky;
 }
 
-.top-10{
-  top: 2.5rem;
-}
-
 .left-0{
   left: 0px;
 }
 
 .top-28{
   top: 7rem;
+}
+
+.top-10{
+  top: 2.5rem;
 }
 
 .right-4{
@@ -549,6 +549,14 @@ video {
 
 .z-50{
   z-index: 50;
+}
+
+.z-auto{
+  z-index: auto;
+}
+
+.z-40{
+  z-index: 40;
 }
 
 .col-span-full{
@@ -578,14 +586,14 @@ video {
   margin-bottom: 1rem;
 }
 
-.mx-20{
-  margin-left: 5rem;
-  margin-right: 5rem;
-}
-
 .my-10{
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
+}
+
+.mx-20{
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 .my-16{
@@ -682,6 +690,10 @@ video {
   aspect-ratio: 16 / 9;
 }
 
+.h-36{
+  height: 9rem;
+}
+
 .h-2{
   height: 0.5rem;
 }
@@ -707,20 +719,12 @@ video {
   height: 12rem;
 }
 
-.h-36{
-  height: 9rem;
-}
-
 .h-full{
   height: 100%;
 }
 
-.h-28{
-  height: 7rem;
-}
-
-.h-24{
-  height: 6rem;
+.w-96{
+  width: 24rem;
 }
 
 .w-3\/12{
@@ -759,10 +763,6 @@ video {
   width: 16rem;
 }
 
-.w-96{
-  width: 24rem;
-}
-
 .w-36{
   width: 9rem;
 }
@@ -775,12 +775,12 @@ video {
   max-width: 80rem;
 }
 
-.max-w-5xl{
-  max-width: 64rem;
-}
-
 .max-w-2xl{
   max-width: 42rem;
+}
+
+.max-w-5xl{
+  max-width: 64rem;
 }
 
 .cursor-pointer{
@@ -1063,6 +1063,11 @@ video {
   padding-right: 1.25rem;
 }
 
+.py-7{
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
 .py-10{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -1113,11 +1118,6 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.py-7{
-  padding-top: 1.75rem;
-  padding-bottom: 1.75rem;
-}
-
 .px-3{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -1135,10 +1135,6 @@ video {
 
 .pt-4{
   padding-top: 1rem;
-}
-
-.pb-7{
-  padding-bottom: 1.75rem;
 }
 
 .pt-16{
@@ -1773,8 +1769,8 @@ input:focus{
     padding-bottom: 0.75rem;
   }
 
-  .sm\:pb-10{
-    padding-bottom: 2.5rem;
+  .sm\:pb-8{
+    padding-bottom: 2rem;
   }
 
   .sm\:pb-0{
@@ -1799,10 +1795,6 @@ input:focus{
 
   .sm\:pt-16{
     padding-top: 4rem;
-  }
-
-  .sm\:pb-8{
-    padding-bottom: 2rem;
   }
 
   .sm\:pl-12{
@@ -1866,14 +1858,14 @@ input:focus{
     grid-column: span 3 / span 3;
   }
 
-  .md\:mx-28{
-    margin-left: 7rem;
-    margin-right: 7rem;
-  }
-
   .md\:my-20{
     margin-top: 5rem;
     margin-bottom: 5rem;
+  }
+
+  .md\:mx-28{
+    margin-left: 7rem;
+    margin-right: 7rem;
   }
 
   .md\:my-10{
