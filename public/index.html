@@ -21,7 +21,7 @@
                 <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl">Bitcoin do jeito <span
                         style="color: #F3FFC2;">certo</span></h1>
                 <p
-                    class="text-lg md:text-xl lg:text-2xl xl:text-3xl font-extralight mt-3 sm:mt-4 md:mt-8 lg:mt-10 mb-10 sm:mb-6 md:mb-8 lg:mb-10 xl:mb-12">
+                    class="text-lg md:text-xl lg:text-2xl xl:text-3xl font-extralight mt-3 sm:mt-4 md:mt-8 lg:mt-10 mb-10 sm:mb-6 md:mb-8 lg:mb-10 xl:mb-12 text-white">
                     A
                     forma mais fácil e segura de
                     comprar e
@@ -66,331 +66,409 @@
         </div>
     </section>
 
-    <hr class="mx-20 md:mx-28 border-purple-200">
+    <div class="max-w-7xl mx-auto border border-x-0 xl:border-r border-purple-200"
+        style="border-radius: 0px 150px 150px 0px;">
 
-    <section class="py-16 sm:py-20 md:py-24">
-        <div class="px-5 xl:px-0">
-            <h2 class="text-2xl md:text-3xl mb-4 text-center ">Principais funcionalidades</h2>
-            <p class="text-center">A Plebz tem tudo que você precisa para <b>iniciar</b> sua jornada no bitcoin</p>
-        </div>
-        <div
-            class="flex flex-col-reverse sm:flex-row items-center lg:items-start gap-10 sm:gap-6 lg:gap-24 mt-10 sm:mt-20">
-            <div class="w-full sm:w-6/12">
-                <img src="./images/inpage/home/inBody1.webp" alt="">
+        <section class="pt-16 sm:pt-20 md:pt-24 pb-20 sm:pb-28 md:pb-36">
+            <div class="px-5 xl:px-0">
+                <h2 class="text-2xl md:text-3xl mb-4 text-center ">Principais funcionalidades</h2>
+                <p class="text-center">A Plebz tem tudo que você precisa para <b>iniciar</b> sua jornada no bitcoin</p>
             </div>
-            <div class="w-full sm:w-4/12 lg:w-80 px-5 sm:px-0">
+            <div
+                class="flex flex-col-reverse sm:flex-row items-center lg:items-start gap-10 sm:gap-6 lg:gap-24 mt-10 sm:mt-20">
+                <div class="w-full sm:w-6/12">
+                    <img class="prevImg" src="./images/inpage/home/inBody1.webp" alt="">
+                </div>
+                <div class="w-full sm:w-4/12 lg:w-80 px-5 sm:px-0">
+                    <div
+                        class="flex items-center justify-center sm:justify-between gap-5 sm:gap-0 border-b pb-2 text-xl lg:text-2xl font-semibold text-slate-400">
+                        <div onclick="toggleTab('f1')"
+                            class="f1T text-black transition-all hover:bg-slate-100 hover:text-black p-1 px-2 rounded cursor-pointer">
+                            01</div>
+                        <div onclick="toggleTab('f2')"
+                            class="f2T transition-all hover:bg-slate-100 hover:text-black p-1 px-2 rounded cursor-pointer">
+                            02
+                        </div>
+                        <div onclick="toggleTab('f3')"
+                            class="f3T transition-all hover:bg-slate-100 hover:text-black p-1 px-2 rounded cursor-pointer">
+                            03
+                        </div>
+                    </div>
+                    <div class="mt-6 sm:mt-12 flex flex-col gap-6 text-center sm:text-start">
+                        <div class="f1">
+                            <h3 class="text-xl sm:text-2xl md:text-3xl font-semibold">Compra e venda de Bitcoin</h3>
+                            <p class="my-4 sm:my-6">Na Plebz você compra Bitcoin e ainda pode automatizar suas compras
+                                para
+                                nunca mais se preocupar com a volatilidade de curto prazo.</p>
+                            <a href="#" class="flex items-center justify-center sm:justify-start font-semibold">
+                                Saiba mais
+                                <i class="bi-arrow-right-short text-2xl text-tPurpleLight"></i>
+                            </a>
+                        </div>
+                        <div class="f2 hidden">
+                            <h3 class="text-xl sm:text-2xl md:text-3xl font-semibold">Armazenamento Multisig</h3>
+                            <p class="my-4 sm:my-6">Muito mais segura do que deixar saldo em corretoras ou usar wallets
+                                de
+                                chave única, a tecnologia Multisig te protege de diversos riscos como acidentes, perda
+                                das
+                                chaves, roubo, ataques de hackers, etc.</p>
+                            <a href="#" class="flex items-center justify-center sm:justify-start font-semibold">
+                                Saiba mais
+                                <i class="bi-arrow-right-short text-2xl text-tPurpleLight"></i>
+                            </a>
+                        </div>
+                        <div class="f3 hidden">
+                            <h3 class="text-xl sm:text-2xl md:text-3xl font-semibold">Plebz Concierge</h3>
+                            <p class="my-4 sm:my-6">Nosso serviço de Concierge vai te guiar em toda a jornada de compra
+                                e
+                                armazenamento seguro, e
+                                está sempre disponível para te ajudar em qualquer situação.</p>
+                            <a href="#" class="flex items-center justify-center sm:justify-start font-semibold">
+                                Saiba mais
+                                <i class="bi-arrow-right-short text-2xl text-tPurpleLight"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            let f1 = document.querySelector('.f1'),
+                f2 = document.querySelector('.f2'),
+                f3 = document.querySelector('.f3');
+            let f1T = document.querySelector('.f1T'),
+                f2T = document.querySelector('.f2T'),
+                f3T = document.querySelector('.f3T'),
+                prevImg = document.querySelector('.prevImg');
+
+            function toggleTab(p) {
+                if (p == 'f1') {
+                    f1.classList.remove('hidden');
+                    f2.classList.add('hidden');
+                    f3.classList.add('hidden');
+                    f1T.classList.add('text-black');
+                    f2T.classList.remove('text-black');
+                    f3T.classList.remove('text-black');
+                    prevImg.src = "./images/inpage/home/inBody1.webp"
+                } else if (p == 'f2') {
+                    f2.classList.remove('hidden');
+                    f1.classList.add('hidden');
+                    f3.classList.add('hidden');
+                    f2T.classList.add('text-black');
+                    f1T.classList.remove('text-black');
+                    f3T.classList.remove('text-black');
+                    prevImg.src = "./images/inpage/home/inBody2.webp"
+                } else if (p == 'f3') {
+                    f3.classList.remove('hidden');
+                    f2.classList.add('hidden');
+                    f1.classList.add('hidden');
+                    f3T.classList.add('text-black');
+                    f2T.classList.remove('text-black');
+                    f1T.classList.remove('text-black');
+                    prevImg.src = "./images/inpage/home/inBody3.webp"
+                }
+
+
+                document.querySelector(`.${p}`).classList.remove('hidden')
+                // console.log(p)
+            }
+
+        </script>
+
+        <section class="max-w-5xl mx-auto px-5 xl:px-0 pb-16 sm:pb-20 md:pb-24">
+            <h2 class="text-2xl md:text-3xl text-center mb-10 sm:mb-14 md:mb-20">Diferenciais</h2>
+            <div class="grid grid-cols-12 gap-6">
+
                 <div
-                    class="flex items-center justify-center sm:justify-between gap-5 sm:gap-0 border-b pb-2 text-xl lg:text-2xl font-semibold text-slate-400">
-                    <div onclick="toggleTab('f1')"
-                        class="f1T text-black transition-all hover:bg-slate-100 hover:text-black p-1 px-2 rounded cursor-pointer">
-                        01</div>
-                    <div onclick="toggleTab('f2')"
-                        class="f2T transition-all hover:bg-slate-100 hover:text-black p-1 px-2 rounded cursor-pointer">
-                        02
+                    class="transition-all hover:scale-105 col-span-full md:col-span-7 bg-tPurpleLightV2 rounded-2xl flex items-center p-5">
+
+                    <div class="w-8/12 sm:w-6/12 text-xs sm:text-sm lg:text-base">
+                        <h4 class="text-xl sm:text-2xl font-bold">Multisig</h4>
+                        <div class="font-semibold text-tPurpleLight">Cústódia colaborativa</div>
+                        <p class="my-4 font-semibold text-tPurple">"Não confie, verifique"Nosso serviço de custódia
+                            multisig assistida garante que
+                            só você terá
+                            acesso aos seus Bitcoins, sem complicações.</p>
+                        <a href="#" class="flex items-center font-semibold text-xs sm:text-sm">
+                            Saiba mais
+                            <i class="bi-arrow-right-short text-xl text-tPurpleLight"></i>
+                        </a>
                     </div>
-                    <div onclick="toggleTab('f3')"
-                        class="f3T transition-all hover:bg-slate-100 hover:text-black p-1 px-2 rounded cursor-pointer">
-                        03
+
+                    <div class="w-4/12 sm:w-6/12">
+                        <img src="./images/inpage/home/inBody4.webp" alt=""
+                            class="w-24 sm:w-32 md:w-auto lg:-mt-16 md:-ml-6 lg:-ml-10">
                     </div>
+
                 </div>
-                <div class="mt-6 sm:mt-12 flex flex-col gap-6 text-center sm:text-start">
-                    <div class="f1">
-                        <h3 class="text-xl sm:text-2xl md:text-3xl font-semibold">Plebz Concierge</h3>
-                        <p class="my-4 sm:my-6">Nosso serviço de Concierge vai te guiar em toda a jornada de compra e
-                            armazenamento seguro, e
-                            está sempre disponível para te ajudar em qualquer situação.</p>
-                        <a href="#" class="flex items-center justify-center sm:justify-start font-semibold">
-                            Saiba mais
-                            <i class="bi-arrow-right-short text-2xl"></i>
-                        </a>
-                    </div>
-                    <div class="f2 hidden">
-                        <h3 class="text-xl sm:text-2xl md:text-3xl font-semibold">Plebz Concierge #2</h3>
-                        <p class="my-4 sm:my-6">Nosso serviço de Concierge vai te guiar em toda a jornada de compra e
-                            armazenamento seguro, e
-                            está sempre disponível para te ajudar em qualquer situação.</p>
-                        <a href="#" class="flex items-center justify-center sm:justify-start font-semibold">
-                            Saiba mais
-                            <i class="bi-arrow-right-short text-2xl"></i>
-                        </a>
-                    </div>
-                    <div class="f3 hidden">
-                        <h3 class="text-xl sm:text-2xl md:text-3xl font-semibold">Plebz Concierge #3</h3>
-                        <p class="my-4 sm:my-6">Nosso serviço de Concierge vai te guiar em toda a jornada de compra e
-                            armazenamento seguro, e
-                            está sempre disponível para te ajudar em qualquer situação.</p>
-                        <a href="#" class="flex items-center justify-center sm:justify-start font-semibold">
-                            Saiba mais
-                            <i class="bi-arrow-right-short text-2xl"></i>
-                        </a>
-                    </div>
+
+                <div
+                    class="transition-all hover:scale-105 homeBox2 col-span-full md:col-span-5 bg-slate-200 p-5 lg:p-8 rounded-2xl">
+                    <h4 class="text-xl sm:text-2xl font-bold">Concierge</h4>
+                    <p class="my-4 font-semibold lg:text-lg text-black">Para deixar seu patrimônio ainda mais seguro,
+                        enviamos as
+                        hardware wallets que você precisar para seu endereço,e ajudamos a configurá-las.</p>
                 </div>
+
+                <div
+                    class="transition-all hover:scale-105 homeBox3 col-span-full md:col-span-5 bg-tPurple text-white p-5 lg:p-8 rounded-2xl">
+                    <h4 class="text-xl sm:text-2xl font-medium">Compra descomplicada</h4>
+                    <p class="my-4 lg:text-lg text-white">Deposite Reais via PIX e compre Bitcoin na Plebz em menos de1
+                        minuto, sem
+                        dor de cabeça
+                        ou burocracia.</p>
+                </div>
+
+                <div class="transition-all hover:scale-105 col-span-full md:col-span-7 rounded-2xl flex items-center gap-10 p-5"
+                    style="background-color: #F3FD63;">
+
+                    <div class="w-8/12 sm:w-6/12 text-xs sm:text-sm lg:text-base">
+                        <h4 class="text-xl sm:text-2xl font-bold">DCA</h4>
+                        <div class="font-bold">Compra recorrente</div>
+                        <p class="my-4 font-semibold text-black">Agende compras recorrentes em poucos cliques e nunca
+                            mais
+                            se preocupe
+                            com gráficos ou volatilidade
+                            de curto prazo,</p>
+                        <a href="#" class="flex items-center font-semibold text-xs sm:text-sm">
+                            Saiba mais
+                            <i class="bi-arrow-right-short text-xl text-tPurpleLight"></i>
+                        </a>
+                    </div>
+
+                    <div class="w-4/12 sm:w-6/12">
+                        <img src="./images/inpage/home/inBody5.webp" alt=""
+                            class="w-24 sm:w-32 md:w-auto lg:-mt-10 lg:-mb-4">
+                    </div>
+
+                </div>
+        </section>
+
+    </div>
+
+    <div class="max-w-7xl mx-auto border-l border-purple-200" style="border-radius: 150px 0px 0px 0px;">
+
+        <section class="max-w-5xl mx-auto px-5 xl:px-0 py-16 sm:py-20 md:py-24 text-center">
+            <h2 class="text-2xl md:text-3xl">Depoimentos</h2>
+            <div class="pt-5 sm:pt-10">
+                <i class="bi-quote text-2xl sm:text-4xl"></i>
             </div>
-        </div>
-    </section>
-    <script>
-        let f1 = document.querySelector('.f1'),
-            f2 = document.querySelector('.f2'),
-            f3 = document.querySelector('.f3');
-        let f1T = document.querySelector('.f1T'),
-            f2T = document.querySelector('.f2T'),
-            f3T = document.querySelector('.f3T');
+            <div
+                class="flex items-center justify-center gap-3 sm:gap-12 md:gap-20 lg:gap-24 h-72 sm:h-60 md:h-64 lg:h-60 xl:h-52">
 
+                <i class="a1 bi-chevron-left px-1 sm:px-2 sm:py-1 border rounded-full text-slate-400 hover:bg-slate-100 cursor-pointer"
+                    onclick="back()"></i>
 
-        function toggleTab(p) {
-            if (p == 'f1') {
-                f1.classList.remove('hidden');
-                f2.classList.add('hidden');
-                f3.classList.add('hidden');
-                f1T.classList.add('text-black');
-                f2T.classList.remove('text-black');
-                f3T.classList.remove('text-black');
-            } else if (p == 'f2') {
-                f2.classList.remove('hidden');
-                f1.classList.add('hidden');
-                f3.classList.add('hidden');
-                f2T.classList.add('text-black');
-                f1T.classList.remove('text-black');
-                f3T.classList.remove('text-black');
-            } else if (p == 'f3') {
-                f3.classList.remove('hidden');
-                f2.classList.add('hidden');
-                f1.classList.add('hidden');
-                f3T.classList.add('text-black');
-                f2T.classList.remove('text-black');
-                f1T.classList.remove('text-black');
+                <div class="testContainer text-sm sm:text-base md:text-lg"></div>
+
+                <i class="bi-chevron-right px-1 sm:px-2 sm:py-1 border rounded-full text-slate-400 hover:bg-slate-100 cursor-pointer"
+                    onclick="forward()"></i>
+
+            </div>
+            <div
+                class="testPrevSquares flex items-center justify-center gap-3 pt-8 sm:pt-16 text-xs sm:text-sm text-slate-600">
+            </div>
+        </section>
+        <script>
+            let testimonials = [
+                {
+                    content: `"Eu não me sentia seguro deixando meus Bitcoins na corretora,
+                        mas também tinha medo de enviá-los para
+                        uma wallet no meu celular, por medo de fazer algo errado e perder meu dinheiro. O Concierge da
+                        Plebz
+                        me ensinou passo a passo como fazer
+                        auto-custódia, e a sensação de tranquilidade de saber que eu agora soumeu próprio banco é
+                        incrível."`,
+                    name: `Rafaela S. Micro-empresária`
+                },
+                {
+                    content: `"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam accusantium ea enim cupiditate,
+                        numquam magnam doloribus! Cum, praesentium illum doloremque est reprehenderit enim laudantium
+                        autem voluptate repellat possimus facere? Earum."`,
+                    name: `Rafaela S. Micro-empresária`
+                },
+                {
+                    content: `"Sit nisi minima magnam nesciunt exercitationem ea ipsam dolorum consectetur eveniet illum ex
+                        aliquid dolore soluta quidem praesentium, doloremque quos necessitatibus rerum. Sit nisi minima
+                        magnam nesciunt exercitationem ea ipsam dolorum consectetur eveniet illum ex aliquid dolore
+                        soluta quidem praesentium, doloremque quos necessitatibus rerum."`,
+                    name: `Rafaela S. Micro-empresária`
+                }
+            ]
+
+            let testContainer = document.querySelector('.testContainer'),
+                testPrevSquares = document.querySelector('.testPrevSquares');
+
+            testimonials.map((i, j) => {
+                testContainer.innerHTML += `<div class="test${j + 1} ${j + 1 == 1 ? 'currentTest' : 'hidden'}"><p class='text-black'>${i.content}</p><div class="text-tPurpleLight font-semibold text-sm mt-5">${i.name}</div></div>`;
+
+                testPrevSquares.innerHTML += `<i class="testSQ${j + 1} ${j + 1 == 1 ? 'bi-square-fill' : 'bi-square'}"></i>                                       `;
+            });
+
+            function forward() {
+                let currentTest = document.querySelector('.currentTest'),
+                    currentTestPrevSquares = document.querySelector('.bi-square-fill');
+
+                for (let i = 1; i < testContainer.childElementCount + 1; i++) {
+                    if (currentTest.classList.contains(`test${i}`)) {
+                        if (i < testContainer.childElementCount) {
+                            currentTest.classList.replace('currentTest', 'hidden');
+                            document.querySelector(`.test${i + 1}`).classList.replace('hidden', 'currentTest');
+                            testPrevSquares.children[i - 1].classList.replace('bi-square-fill', 'bi-square');
+                            testPrevSquares.children[i].classList.replace('bi-square', 'bi-square-fill');
+                        }
+                    }
+                }
             }
 
+            function back() {
+                let currentTest = document.querySelector('.currentTest'),
+                    currentTestPrevSquares = document.querySelector('.bi-square-fill');
 
-            document.querySelector(`.${p}`).classList.remove('hidden')
-            // console.log(p)
-        }
-
-    </script>
-
-    <hr class="mx-20 md:mx-28 border-purple-200">
-
-    <section class="max-w-5xl mx-auto px-5 xl:px-0 py-16 sm:py-20 md:py-24">
-        <h2 class="text-2xl md:text-3xl text-center mb-10 sm:mb-14 md:mb-20">Diferenciais</h2>
-        <div class="grid grid-cols-12 gap-6">
-
-            <div
-                class="transition-all hover:scale-105 col-span-full md:col-span-7 bg-tPurpleLightV2 rounded-2xl flex items-center p-5">
-
-                <div class="w-8/12 sm:w-6/12 text-xs sm:text-sm lg:text-base">
-                    <h4 class="text-xl sm:text-2xl font-bold">Multisig</h4>
-                    <div class="font-semibold text-tPurpleLight">Cústódia colaborativa</div>
-                    <p class="my-4 font-semibold">"Não confie, verifique"Nosso serviço de custódia
-                        multisig assistida garante que
-                        só você terá
-                        acesso aos seus Bitcoins, sem complicações.</p>
-                    <a href="#" class="flex items-center font-semibold text-xs sm:text-sm">
-                        Saiba mais
-                        <i class="bi-arrow-right-short text-xl text-tPurpleLight"></i>
-                    </a>
-                </div>
-
-                <div class="w-4/12 sm:w-6/12">
-                    <img src="./images/inpage/home/inBody2.webp" alt=""
-                        class="w-24 sm:w-32 md:w-auto lg:-mt-16 md:-ml-6 lg:-ml-10">
-                </div>
-
-            </div>
-
-            <div
-                class="transition-all hover:scale-105 homeBox2 col-span-full md:col-span-5 bg-slate-200 p-5 lg:p-8 rounded-2xl">
-                <h4 class="text-xl sm:text-2xl font-bold">Concierge</h4>
-                <p class="my-4 font-semibold lg:text-lg">Para deixar seu patrimônio ainda mais seguro, enviamos as
-                    hardware wallets que você precisar para seu endereço,e ajudamos a configurá-las.</p>
-            </div>
-
-            <div
-                class="transition-all hover:scale-105 homeBox3 col-span-full md:col-span-5 bg-tPurple text-white p-5 lg:p-8 rounded-2xl">
-                <h4 class="text-xl sm:text-2xl font-medium">Compra descomplicada</h4>
-                <p class="my-4 lg:text-lg">Deposite Reais via PIX e compre Bitcoin na Plebz em menos de1 minuto, sem
-                    dor de cabeça
-                    ou burocracia.</p>
-            </div>
-
-            <div
-                class="transition-all hover:scale-105 col-span-full md:col-span-7 bg-tYellow rounded-2xl flex items-center gap-10 p-5">
-
-                <div class="w-8/12 sm:w-6/12 text-xs sm:text-sm lg:text-base">
-                    <h4 class="text-xl sm:text-2xl font-bold">DCA</h4>
-                    <div class="font-bold">Compra recorrente</div>
-                    <p class="my-4 font-semibold">Agende compras recorrentes em poucos cliques e nunca mais se preocupe
-                        com gráficos ou volatilidade
-                        de curto prazo,</p>
-                    <a href="#" class="flex items-center font-semibold text-xs sm:text-sm">
-                        Saiba mais
-                        <i class="bi-arrow-right-short text-xl text-tPurpleLight"></i>
-                    </a>
-                </div>
-
-                <div class="w-4/12 sm:w-6/12">
-                    <img src="./images/inpage/home/inBody3.webp" alt=""
-                        class="w-24 sm:w-32 md:w-auto lg:-mt-10 lg:-mb-4">
-                </div>
-
-            </div>
-    </section>
-
-    <hr class="mx-20 md:mx-28 border-purple-200">
-
-    <section class="max-w-5xl mx-auto px-5 xl:px-0 py-16 sm:py-20 md:py-24 text-center">
-        <h2 class="text-2xl md:text-3xl">Depoimentos</h2>
-        <div class="py-5 sm:py-10">
-            <i class="bi-quote text-2xl sm:text-4xl"></i>
-        </div>
-        <div class="flex items-center justify-center gap-3 sm:gap-12 md:gap-20 lg:gap-24">
-            <i
-                class="bi-chevron-left px-1 sm:px-2 sm:py-1 border rounded-full text-slate-400 hover:bg-slate-100 cursor-pointer"></i>
-            <div class="text-sm sm:text-base md:text-lg">
-                <p>"Eu não me sentia seguro deixando meus Bitcoins na corretora,
-                    mas também tinha medo de enviá-los para
-                    uma wallet no meu celular, por medo de fazer algo errado e perder meu dinheiro. O Concierge da Plebz
-                    me ensinou passo a passo como fazer
-                    auto-custódia, e a sensação de tranquilidade de saber que eu agora soumeu próprio banco é
-                    incrível."</p>
-                <div class="text-tPurpleLight font-semibold mt-5">Rafaela S. Micro-empresária</div>
-            </div>
-            <i
-                class="bi-chevron-right px-1 sm:px-2 sm:py-1 border rounded-full text-slate-400 hover:bg-slate-100 cursor-pointer"></i>
-        </div>
-        <div class="flex items-center justify-center gap-3 pt-8 sm:pt-16 text-xs sm:text-sm text-slate-600">
-            <i class="bi-square-fill text-black"></i>
-            <i class="bi-square"></i>
-            <i class="bi-square"></i>
-            <i class="bi-square"></i>
-            <i class="bi-square"></i>
-        </div>
-    </section>
-
-    <hr class="mx-20 md:mx-28 border-purple-200">
-
-    <section class="max-w-5xl mx-auto px-5 xl:px-0 py-16 sm:py-20 md:py-24">
-        <h2 class="text-2xl md:text-3xl font-medium text-center mb-10 sm:mb-14 md:mb-20">Principais dúvidas</h2>
-        <div class="flex flex-col md:flex-row gap-6">
-
-            <div class="w-3/12 hidden md:block rounded-xl">
-                <img src="./images/inpage/home/inBody4.webp" alt="" class="w-full h-auto"
-                    style="border-radius: 90px 12px 12px 12px;">
-            </div>
-
-            <div class="w-full md:w-9/12 flex flex-col gap-4">
-
-                <div class="FAQABody bg-white p-4 sm:p-6 shadow-lg shadow-gray-100 rounded-2xl">
-
-                    <div class="FAQAQues flex items-center justify-between mb-4 sm:mb-3 cursor-pointer"
-                        onclick="toggleFaqs('FAQA')">
-                        <h3 class="font-medium text-base sm:text-lg">Como faço para comprar meu primeiro Bitcoin?</h3>
-                        <i class="bi-x-lg hover:text-red-600"></i>
-                    </div>
-
-                    <p class="FAQAAns text-sm font-semibold sm:mr-10">Lorem ipsum dolor sit amet, consectetur
-                        adipiscing
-                        elit, sed do
-                        eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                        cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-
-                </div>
-
-                <div class="FAQBBody">
-
-                    <div class="FAQBQues flex items-center justify-between border rounded-lg text-gray-400 p-3 cursor-pointer"
-                        onclick="toggleFaqs('FAQB')">
-                        <h3 class="font-medium text-base sm:text-lg">O que é Multisig?</h3>
-                        <i class="bi-x-lg hover:text-red-600"></i>
-                    </div>
-
-                    <p class="FAQBAns text-sm font-semibold sm:mr-10 hidden">Lorem ipsum dolor sit amet, consectetur
-                        adipiscing
-                        elit, sed do
-                        eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                        cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-
-                </div>
-
-                <div class="FAQCBody">
-
-                    <div class="FAQCQues flex items-center justify-between border rounded-lg text-gray-400 p-3 cursor-pointer"
-                        onclick="toggleFaqs('FAQC')">
-                        <h3 class="font-medium text-base sm:text-lg">O que é DCA?</h3>
-                        <i class="bi-x-lg hover:text-red-600"></i>
-                    </div>
-
-                    <p class="FAQCAns text-sm font-semibold sm:mr-10 hidden">Lorem ipsum dolor sit amet, consectetur
-                        adipiscing
-                        elit, sed do
-                        eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                        cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-
-                </div>
-
-                <div class="FAQDBody">
-
-                    <div class="FAQDQues flex items-center justify-between border rounded-lg text-gray-400 p-3 cursor-pointer"
-                        onclick="toggleFaqs('FAQD')">
-                        <h3 class="font-medium text-base sm:text-lg">Como faço para comprar meu primeiro Bitcoin?</h3>
-                        <i class="bi-x-lg hover:text-red-600"></i>
-                    </div>
-
-                    <p class="FAQDAns text-sm font-semibold sm:mr-10 hidden">Lorem ipsum dolor sit amet, consectetur
-                        adipiscing
-                        elit, sed do
-                        eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                        cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-
-                </div>
-
-                <div class="flex items-center gap-4 text-xs sm:text-sm">
-                    <div>Não encontrou a resposta para a sua pergunta?</div>
-                    <a href="#" class="flex items-center gap-1 font-semibold">
-                        <span>Acesse nossa central de ajuda</span>
-                        <i class="bi-arrow-right-short text-2xl text-tPurpleLight"></i>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-    <script>
-        function toggleFaqs(e) {
-            const FAQBody = document.querySelector(`.${e}Body`),
-                FAQQues = document.querySelector(`.${e}Ques`),
-                FAQAns = document.querySelector(`.${e}Ans`)
-
-            if (FAQBody.classList.contains('bg-white')) {
-                FAQBody.classList = `${e}Body`;
-                FAQQues.classList = `${e}Ques flex items-center justify-between border rounded-lg text-gray-400 p-3 cursor-pointer`;
-            } else {
-                FAQBody.classList.add('bg-white', 'p-4', 'sm:p-6', 'shadow-lg', 'shadow-gray-100', 'rounded-2xl');
-                FAQQues.classList = `${e}Ques flex items-center justify-between mb-4 sm:mb-3 cursor-pointer`;
+                for (let i = 1; i < testContainer.childElementCount + 1; i++) {
+                    if (currentTest.classList.contains(`test${i}`)) {
+                        if (i > 1) {
+                            currentTest.classList.replace('currentTest', 'hidden');
+                            document.querySelector(`.test${i - 1}`).classList.replace('hidden', 'currentTest');
+                            testPrevSquares.children[i - 1].classList.replace('bi-square-fill', 'bi-square');
+                            testPrevSquares.children[i - 2].classList.replace('bi-square', 'bi-square-fill');
+                        }
+                    }
+                }
             }
-            FAQAns.classList.toggle('hidden');
-        }
-    </script>
+        </script>
+
+        <section class="max-w-5xl mx-auto px-5 xl:px-0 py-16 sm:py-20 md:py-24">
+            <h2 class="text-2xl md:text-3xl font-medium text-center mb-10 sm:mb-14 md:mb-20">Principais dúvidas</h2>
+            <div class="flex flex-col md:flex-row gap-6">
+
+                <div class="w-3/12 hidden md:block rounded-xl">
+                    <img src="./images/inpage/home/inBody6.webp" alt="" class="w-full h-auto"
+                        style="border-radius: 90px 12px 12px 12px;">
+                </div>
+
+                <div class="w-full md:w-9/12 flex flex-col gap-4">
+
+                    <div class="FAQABody bg-white p-4 sm:p-6 shadow-lg shadow-gray-100 rounded-2xl">
+
+                        <div class="FAQAQues flex items-center justify-between mb-4 sm:mb-3 cursor-pointer"
+                            onclick="toggleFaqs('FAQA')">
+                            <h3 class="font-medium text-base sm:text-lg">Como faço para comprar meu primeiro Bitcoin?
+                            </h3>
+                            <i class="bi-x-lg hover:text-red-600"></i>
+                        </div>
+
+                        <p class="FAQAAns text-sm font-semibold sm:mr-10 text-black">Lorem ipsum dolor sit amet,
+                            consectetur
+                            adipiscing
+                            elit, sed do
+                            eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat
+                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+
+                    </div>
+
+                    <div class="FAQBBody">
+
+                        <div class="FAQBQues flex items-center justify-between border rounded-lg text-gray-400 p-3 cursor-pointer"
+                            onclick="toggleFaqs('FAQB')">
+                            <h3 class="font-medium text-base sm:text-lg">O que é Multisig?</h3>
+                            <i class="bi-x-lg hover:text-red-600"></i>
+                        </div>
+
+                        <p class="FAQBAns text-sm font-semibold sm:mr-10 hidden text-black">Lorem ipsum dolor sit amet,
+                            consectetur
+                            adipiscing
+                            elit, sed do
+                            eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat
+                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+
+                    </div>
+
+                    <div class="FAQCBody">
+
+                        <div class="FAQCQues flex items-center justify-between border rounded-lg text-gray-400 p-3 cursor-pointer"
+                            onclick="toggleFaqs('FAQC')">
+                            <h3 class="font-medium text-base sm:text-lg">O que é DCA?</h3>
+                            <i class="bi-x-lg hover:text-red-600"></i>
+                        </div>
+
+                        <p class="FAQCAns text-sm font-semibold sm:mr-10 hidden text-black">Lorem ipsum dolor sit amet,
+                            consectetur
+                            adipiscing
+                            elit, sed do
+                            eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat
+                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+
+                    </div>
+
+                    <div class="FAQDBody">
+
+                        <div class="FAQDQues flex items-center justify-between border rounded-lg text-gray-400 p-3 cursor-pointer"
+                            onclick="toggleFaqs('FAQD')">
+                            <h3 class="font-medium text-base sm:text-lg">Como faço para comprar meu primeiro Bitcoin?
+                            </h3>
+                            <i class="bi-x-lg hover:text-red-600"></i>
+                        </div>
+
+                        <p class="FAQDAns text-sm font-semibold sm:mr-10 hidden text-black">Lorem ipsum dolor sit amet,
+                            consectetur
+                            adipiscing
+                            elit, sed do
+                            eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat
+                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+
+                    </div>
+
+                    <div class="flex items-center gap-4 text-xs sm:text-sm">
+                        <div>Não encontrou a resposta para a sua pergunta?</div>
+                        <a href="#" class="flex items-center gap-1 font-semibold">
+                            <span>Acesse nossa central de ajuda</span>
+                            <i class="bi-arrow-right-short text-2xl text-tPurpleLight"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <script>
+            function toggleFaqs(e) {
+                const FAQBody = document.querySelector(`.${e}Body`),
+                    FAQQues = document.querySelector(`.${e}Ques`),
+                    FAQAns = document.querySelector(`.${e}Ans`)
+
+                if (FAQBody.classList.contains('bg-white')) {
+                    FAQBody.classList = `${e}Body`;
+                    FAQQues.classList = `${e}Ques flex items-center justify-between border rounded-lg text-gray-400 p-3 cursor-pointer`;
+                } else {
+                    FAQBody.classList.add('bg-white', 'p-4', 'sm:p-6', 'shadow-lg', 'shadow-gray-100', 'rounded-2xl');
+                    FAQQues.classList = `${e}Ques flex items-center justify-between mb-4 sm:mb-3 cursor-pointer`;
+                }
+                FAQAns.classList.toggle('hidden');
+            }
+        </script>
+
+    </div>
 
     <footer id="footer"></footer>
 

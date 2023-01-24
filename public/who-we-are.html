@@ -14,34 +14,39 @@
 <body>
     <header id="header"></header>
 
-    <section class="bg-tPurple">
-        <div class='max-w-7xl mx-auto px-5 xl:px-0 text-white pt-4 pb-7 sm:pb-10'>
-            <div onclick="history.back()"
-                class="cursor-pointer flex items-center gap-2 text-xs sm:text-sm text-gray-400 hover:text-white">
-                <i class="bi-arrow-left"></i>
-                <span>Voltar</span>
+    <section class="bg-tPurple pt-4">
+        <div class='max-w-7xl mx-auto text-white'>
+            <div class="relative z-50 max-w-2xl rounded-tr-full px-5 py-7 sm:pb-8" style="background: #241538;">
+                <div onclick="history.back()"
+                    class="cursor-pointer flex items-center gap-2 text-xs sm:text-sm text-gray-400 hover:text-white">
+                    <i class="bi-arrow-left"></i>
+                    <span>Voltar</span>
+                </div>
+                <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mt-3 sm:mt-4">Quem Somos?</h1>
             </div>
-            <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mt-3 sm:mt-4">Quem Somos?</h1>
+            <div class="hidden xl:block absolute left-0 top-28 h-36 w-96" style="background: #241538;"></div>
         </div>
+        <div class="bg-gradient-to-r from-tYellow to-tPurpleLight h-2 relative"></div>
     </section>
-    <div class="bg-gradient-to-r from-tYellow to-tPurpleLight h-2"></div>
 
     <div class="max-w-5xl mx-auto">
 
         <section class="sm:w-7/12 px-5 xl:px-0 py-10 md:py-20">
             <h2 class="text-2xl sm:text-3xl mb-2 sm:mb-4">Missão</h2>
-            <p>Nossa Missão é acelerar a adoção do melhor dinheiro que já existiu - o Bitcoin - trazendo inclusão
+            <p class="">Nossa Missão é acelerar a adoção do melhor dinheiro que já existiu - o Bitcoin - trazendo
+                inclusão
                 financeira e liberdade para indivíduos ao redor do mundo.</p>
         </section>
 
         <hr class="mx-20 md:mx-28 border-purple-200">
 
-        <section class="flex flex-col sm:flex-row gap-10 sm:gap-16 md:gap-24 lg:gap-36 px-5 xl:px-0 py-10 md:py-20">
-            <div class="w-full sm:w-8/12">
+        <section class="flex flex-col sm:flex-row gap-10 md:gap-16 lg:gap-20 px-5 xl:px-0 py-10 md:py-20">
+            <div class="w-full sm:w-8/12 md:w-7/12 lg:w-8/12">
                 <h2 class="text-2xl sm:text-3xl mb-2 sm:mb-4">Nossa História</h2>
-                <p>Nós Plebz somos apaixonados por Bitcoin e por liberdade.
+                <p class="text-base ">Nós Plebz somos apaixonados por Bitcoin e por liberdade.
                     <br>
-                    Acreditamos que o Bitcoin é o melhor dinheiro que já existiu,por ser baseado em código programável,
+                    Acreditamos que o Bitcoin é o <span class="font-bold">melhor dinheiro que já existiu</span>,por ser
+                    baseado em código programável,
                     open-source, escasso, inconfiscável e descentralizado.
                     <br>
                     O tempo é o único ativo escasso por natureza: não importa quanto dinheiro você tenha, é impossível
@@ -54,14 +59,16 @@
                     nosso tempo de vida.
                     <br>
                     O Bitcoin - dinheiro descentralizado e que nenhum governo pode imprimir - protege seus usuários da
-                    inflação, e é portanto uma ferramenta importantíssima para trazer liberdade e inclusão financeira
+                    inflação, e é portanto uma ferramenta importantíssima para trazer <span class="font-bold">liberdade
+                        e inclusão financeira</span>
                     para bilhões de indivíduos ao redor do planeta.
                     <br>
                     Trabalhamos para acelerar a adoção desta tecnologia e por isso criamos a Plebz, com o objetivo de
-                    tornar cada vez mais fácilpoupar em Bitcoin com segurança e praticidade.
+                    tornar cada vez mais fácil <span class="font-bold">poupar em Bitcoin com segurança e
+                        praticidade</span>.
                 </p>
             </div>
-            <div class="w-full sm:w-4/12 flex justify-center">
+            <div class="w-full sm:w-4/12 md:w-5/12 lg:w-4/12 flex justify-center">
                 <img src="./images/inpage/who-we-are/inBody1.webp" alt="" class="sticky top-10 h-min">
             </div>
         </section>
@@ -79,7 +86,7 @@
                     <h4 class="text-xl sm:text-2xl lg:text-3xl font-semibold">Bernardo Braga</h4>
                     <div style="color: #8E839C;" class="text-sm sm:text-base mt-2">Chief Executive Officer</div>
                     <p class="text-sm md:text-base
-                     my-3 sm:my-4 md:my-6">Brazilian Bitcoiner working on building a future with financial sovereignty
+                     my-3 sm:my-4 md:my-6 ">Brazilian Bitcoiner working on building a future with financial sovereignty
                         on a Bitcoin
                         standard.</p>
                     <a href="#"
@@ -94,7 +101,8 @@
                     <h4 class="text-xl sm:text-2xl lg:text-3xl font-semibold">Mauro Alexandrowitsch</h4>
                     <div style="color: #8E839C;" class="text-sm sm:text-base mt-2">Chief Technology Office</div>
                     <p class="text-sm md:text-base
-                     my-3 sm:my-4 md:my-6">Technology professional with over 10 years of experience developing projects
+                     my-3 sm:my-4 md:my-6 ">Technology professional with over 10 years of experience developing
+                        projects
                         and over 3 years focusing on the Brazilian payments industry.</p>
                     <a href="#"
                         class="bi-linkedin text-2xl md:text-3xl lg:text-4xl transition-all text-sky-700 hover:text-sky-800"></a>
@@ -109,10 +117,10 @@
         <hr class="mx-20 md:mx-28 border-purple-200">
 
         <section class="flex gap-6 lg:gap-16 xl:gap-36 px-5 xl:px-0 py-10 md:py-20">
-            <div class="w-3/12 hidden sm:flex justify-center">
+            <div class="w-3/12 md:w-4/12 hidden sm:flex justify-center">
                 <img src="./images/inpage/who-we-are/inBody2.webp" alt="" class="sticky top-10 h-min">
             </div>
-            <div class="w-full sm:w-9/12">
+            <div class="w-full sm:w-9/12 md:w-8/12">
 
                 <div class="text-center sm:text-start">
                     <h3 class="text-2xl sm:text-3xl font-medium">Fale Conosco</h3>

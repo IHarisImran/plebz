@@ -19,3 +19,7 @@ This repository contains Plebz complete source code. To start development-work o
 ### Start the development server
 
 * yarn dev
+
+## Note
+
+The development server starts at **127.0.0.1:5500** and **localhost:5500**. The development server is only needed when we are editing CSS on the website.

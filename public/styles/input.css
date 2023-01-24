@@ -17,6 +17,11 @@ br {
     margin-bottom: 15px !important;
 }
 
+p {
+    --tw-text-opacity: 1;
+    color: rgb(71 85 105 / var(--tw-text-opacity));
+}
+
 select:focus,
 textarea,
 textarea:focus,
